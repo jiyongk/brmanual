@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="image/배달잉.png">
+    <meta property="og:url" content="https://jiyongk.github.io/brmanual/main.html">
+    <meta property="og:description" content="배민라이더를 위한 업무가이드 입니다.">
+    <meta property="og:title" content="배민라이더스 업무가이드">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <title> 배민라이더스 업무가이드</title>
+  </head>
+  <body>
+    <section class="top">
+      <div class="toptopic"> 배민라이더스 업무가이드</div>
+    </section>
+    <section class="middle">
+      <div class="main">
+          안녕하세요? 배민라이더스 업무가이드 입니다.
+      </div>
+      <div class="intro">
+        아래 문의사항을 선택해주세요.
+      </div>
+      <div class="category">
+        <button id="myBtn1">업무규정</button>
+        <button id="myBtn2">서비스</button>
+        <button id="myBtn3">배달이슈</button>
+        <button id="myBtn4"><a href = "시재.html">시재</a></button>
+        <button id="myBtn5"><a href = "특수배달지.html">특수배달지</a></button>
+        <button id="myBtn6"><a href = "https://jiyongk.github.io/brguide/main.html">가이드맵</a></button>
+      </div>
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <p class="cnt"><a href="규정.html" class="modal-a">규정</a></p>
+          <p class="cnt"><a href="패널티.html" class="modal-a">패널티</a></p>
+          <span class="close1">닫기</span>
+        </div>
+      </div>
+      <div id="myModal2" class="modal2">
+        <div class="modal-content2">
+          <p class="cnt"><a href="가게.html" class="modal-a">가게</a></p>
+          <p class="cnt"><a href="고객.html" class="modal-a">고객</a></p>
+          <span class="close2">닫기</span>
+        </div>
+      </div>
+        <div id="myModal3" class="modal3">
+          <div class="modal-content3">
+            <p class="cnt"><a href="배차.html" class="modal-a">배차</a></p>
+            <p class="cnt"><a href="픽업.html" class="modal-a">픽업</a></p>
+            <p class="cnt"><a href="전달.html" class="modal-a">전달</a></p>
+            <span class="close3">닫기</span>
+          </div>
+      </div>
+      <script>
+      var modal1 = document.getElementById("myModal1");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var btn1 = document.getElementById("myBtn1");
+      var btn2 = document.getElementById("myBtn2");
+      var btn3 = document.getElementById("myBtn3");
+      var span1 = document.getElementsByClassName("close1")[0];
+      var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
+      btn1.onclick = function() {
+        modal1.style.display = "block";
+      }
+      span1.onclick = function() {
+        modal1.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+      }
+      btn2.onclick = function() {
+        modal2.style.display = "block";
+      }
+      span2.onclick = function() {
+        modal2.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      }
+      btn3.onclick = function() {
+        modal3.style.display = "block";
+      }
+      span3.onclick = function() {
+        modal3.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+      }
+      </script>
+    </section>
+    <section class="bottom">
+      <div class="epilogue">
+        이 사이트는 배민라이더의 편의를 위해<br>
+        단순히 제작자의 공부용으로 만들어진 사이트입니다.<br>
+      </div>
+      <div class="helper">
+        <b>Powered by Github page</b>
+      </div>
+    </section>
+  </body>
+</html>
